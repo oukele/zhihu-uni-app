@@ -1,0 +1,27 @@
+<template name="3456e7ff">
+  <view style="height: auto;width: 100%;display: inline-block;" class="_view data-v-09c29d5a">
+    <view style="height: auto;width: 100%;" class="_view data-v-09c29d5a">
+      <swiper style="width: 100%;" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}" class="_swiper data-v-09c29d5a">
+        <swiper-item wx:key="index" key="{{index}}" bindtap="handleProxy" data-newsid="{{item.id}}" data-eventid="{{'Z6D-0-'+index}}" data-comkey="{{$k}}" wx:for="{{title_content}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-09c29d5a">
+          <view style="position: absolute;top: 70px;line-height: 25px;color: #F7F7F7;font-size: 17px;" class="_view data-v-09c29d5a">   {{item.title}} </view>
+          <image src="{{item.image}}" mode class="_image data-v-09c29d5a"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="_view data-v-09c29d5a">今日热闻</view>
+    <view class="_view data-v-09c29d5a content">
+      <view class="_view data-v-09c29d5a uni-list">
+        <view class="_view data-v-09c29d5a uni-list-cell" hover-class="uni-list-cell-hover" wx:key="index" key="{{index}}" bindtap="handleProxy" data-news_id="{{item.news_id}}" data-eventid="{{'o9S-1-'+index}}" data-comkey="{{$k}}" wx:for="{{list_content}}"
+          wx:for-index="index" wx:for-item="item">
+          <view class="_view data-v-09c29d5a uni-media-list">
+            <image class="_image data-v-09c29d5a uni-media-list-logo" src="{{item.thumbnail}}"></image>
+            <view class="_view data-v-09c29d5a uni-media-list-body">
+              <view class="_view data-v-09c29d5a uni-media-list-text-top">{{item.title}}</view>
+              <view class="_view data-v-09c29d5a uni-media-list-text-bottom uni-ellipsis">{{item.content}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

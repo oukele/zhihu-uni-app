@@ -1,0 +1,14 @@
+
+.content {
+  width: 100%;
+  fiex-wrap: wrap;
+}
+.top {
+  line-height: 2em;
+  font-weight: 700;
+  font-size: 38rpx;
+}
+.body {
+  width: 100%;
+  height: auto;
+}

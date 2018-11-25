@@ -1,0 +1,8 @@
+<template name="7a5b9783">
+  <view class="_view data-v-f62f70b8 content" style="display: inline-block;">
+    <view class="_view data-v-f62f70b8 top"> {{title}} </view>
+    <view class="_view data-v-f62f70b8 body">
+      <rich-text nodes="{{msg}}" class="_rich-text data-v-f62f70b8"></rich-text>
+    </view>
+  </view>
+</template>
